@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TempMail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temp Mail</h1>
+    <div class="email-section">
+      <input type="text" id="email" readonly />
+      <button id="generate">Generate</button>
+    </div>
+    <div class="password-section">
+      <input type="password" id="password" placeholder="Optional Password" />
+      <button id="save">Save & Login</button>
+    </div>
+    <div class="inbox">
+      <h2>Inbox</h2>
+      <ul id="message-list"></ul>
+      <div id="message-preview" class="hidden">
+        <h3 id="msg-subject"></h3>
+        <p id="msg-from"></p>
+        <div id="msg-body"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
